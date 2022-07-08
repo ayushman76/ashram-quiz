@@ -17,7 +17,9 @@ select {
   padding: 5px 6px;
   border-radius: 6px;
 }
-
+.first-two, .sec-two{
+  width: 100%;
+}
 select option[value=teal] {
   background: #7952b3;
   color: white;
@@ -75,7 +77,7 @@ h2, h3 {
 }
 
 .tab-content {
-  height: 353px;
+  height: 100%;
   overflow-x: auto;
 }
 
