@@ -1,0 +1,114 @@
+// Variables
+$font-23:23px;
+$bg-blue:#7952b3;
+$text-white:#ffff;
+$danger-color:#ff000033;
+$bg-correct:#0080006b;
+$bg-marvel:#e23636;
+$bg-forest:#6d7518;
+
+
+// theme
+@mixin teal{
+    background-color: $bg-blue !important;
+    color:$text-white !important;
+}
+@mixin forest{
+    background-color: $bg-forest !important;
+    color:$text-white !important;
+}
+@mixin marvel{
+    background-color: $bg-marvel !important;
+    color:$text-white !important;
+}
+
+.teal{
+    @include teal;
+}
+.forest{
+    @include forest;
+}
+.marvel{
+    @include marvel;
+}
+
+
+
+// ------------------------------
+select{
+    padding: 5px 6px;
+    border-radius: 6px;
+}
+select option[value="teal"] {
+    background: $bg-blue;
+    color: $text-white;
+  }
+  
+  select option[value="marvel"] {
+    background: $bg-marvel;
+    color: $text-white;
+  }
+  
+  select option[value="forest"] {
+    background: $bg-forest;
+    color: $text-white;
+  }
+.bg-blue{
+    background-color: $bg-blue;
+}
+
+header,footer{
+    background-color: $bg-blue;
+    h1{
+        font-size:$font-23;
+    }
+}
+
+.nav-tabs .nav-item.active{
+    border-bottom: 3px solid gray;
+}
+
+.form-check-input:checked{
+    background-color: $bg-blue !important;
+    border-color: $bg-blue !important;
+}
+.wrong-ans{
+    background-color: $danger-color;
+}
+.correct-ans{
+    background-color: $bg-correct;
+}
+
+h2,h3{
+    font-size: $font-23 !important;
+}
+.tab-nav{
+    position: sticky;
+    top: 10px;
+    z-index: 9999999;
+    backdrop-filter: blur(4px);
+}
+.tab-content{
+    height: 353px;
+    overflow-x: auto;
+}
+.options{
+    grid-gap: 30%;
+}
+.theme-forest{
+    background-color: $bg-forest;
+    width: 30px;
+    height: 10px;
+}
+.tab-content::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .tab-content::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 6px;
+  }
+
+.correct-answer{
+    display: none;
+}
